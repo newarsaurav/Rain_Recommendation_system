@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block title %} RESULTS {%endblock%}
+{%block content %}
+<div>
+
+
+</div>
+
+<div id="main" class="alt">
+
+    <!-- One -->
+    <section id="one">
+        <div class="inner">
+            <header class="major">
+                <h1>Questions and Predicted Answers</h1>
+            </header>
+
+            <!-- Content -->
+
+            {% for i in range(20 , 25) %}
+
+                
+                {% set idx = 'q' ~ (i+1) %}
+                <h2 id="content">{{questions[i]['question']}}</h2>
+                <p>The predicted answer is <em style="font-size: 30px;"> " {{ data[idx] | upper  }} "</em></p>
+          
+
+            {%endfor %}
+
+            <hr class="major" />
+
+
+        </div>
+    </section>
+
+</div>
+{%endblock%}

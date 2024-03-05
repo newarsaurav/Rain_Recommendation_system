@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+{% block title %} Questions {%endblock%}
+
+{% block content %}
+<style>
+    .question {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .question:hover {
+        background-color: #414976;
+    }
+
+    .yes_no:hover {
+        font-size: 20px;
+    }
+
+    .disp_form {
+        padding: 10px;
+        display: flex;
+    }
+
+    .questions_to_center {
+        padding: 0 250px;
+    }
+
+    @media screen and (max-width: 1200px) {
+        .questions_to_center {
+            padding: 0;
+        }
+    }
+
+    @media screen and (max-width: 300px) {
+        .disp_form {
+            display: block;
+            /* Revert to block-level behavior */
+        }
+    }
+</style>
+<div class="container-md">
+    <div style="text-align: center; padding:10px ;">
+        <h1>Contributions Questions</h1>
+    </div>
+
+    <div class="questions_to_center">
+        <form action="/get_answers" method="post">
+            <div class="disp_form">
+                <div style="padding: 0 50px;">
+                    <h3 class="test">Name</h3>
+                </div>
+                <div style="width: 100%;"><input type="text" name="name" id="" required></div>
+            </div>
+            {% for question in questions %}
+            <div class="question">
+                <div>{{question['id']}}
+                    {{question['question']}}
+                    {% set a = 1 %}
+                </div>
+                <div style="display: flex; justify-content: space-around;" class="yes_no">
+                    <div class="col-4 col-12-small">
+                        <input type="radio" id="q{{question['id']}}-low" name="q{{question['id']}}" value="yes"
+                            required>
+                        <label for="q{{question['id']}}-low">Yes</label>
+                    </div>
+                    <div class="col-4 col-12-small">
+                        <input type="radio" id="q{{question['id']}}-normal" name="q{{question['id']}}" value="no"
+                            required>
+                        <label for="q{{question['id']}}-normal">No</label>
+                    </div>
+                </div>
+
+            </div>
+
+            {% endfor %}
+            <div style="text-align: center;padding:10px"><input type="submit" name="" id="" value="submit"
+                    class="btn btn-primary">
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}

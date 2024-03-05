@@ -1,0 +1,110 @@
+{% extends 'base.html' %}
+{% block title %} Admin {%endblock%}
+{%block content %}
+
+
+<div style="display: flex;justify-content: space-between;padding:0px 50px;">
+    <div style="text-align: center;width: 100%;">
+        <h2 style="margin: 0px !important;">DATASET</h2>
+    </div>
+    <div>
+        <a href="/download_csv" class="button"> Download Dataset</a>
+    </div>
+</div>
+<div style="padding:10px 50px;width: 95%;overflow: scroll;">
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">name</th>
+                <th scope="col">q1</th>
+                <th scope="col">q2</th>
+                <th scope="col">q3</th>
+                <th scope="col">q4</th>
+                <th scope="col">q5</th>
+                <th scope="col">q6</th>
+                <th scope="col">q7</th>
+                <th scope="col">q8</th>
+                <th scope="col">q9</th>
+                <th scope="col">q10</th>
+                <th scope="col">q11</th>
+                <th scope="col">q12</th>
+                <th scope="col">q13</th>
+                <th scope="col">q14</th>
+                <th scope="col">q15</th>
+                <th scope="col">q16</th>
+                <th scope="col">q17</th>
+                <th scope="col">q18</th>
+                <th scope="col">q19</th>
+                <th scope="col">q20</th>
+                <th scope="col">q21</th>
+                <th scope="col">q22</th>
+                <th scope="col">q23</th>
+                <th scope="col">q24</th>
+                <th scope="col">q25</th>
+                <th scope="col">q26</th>
+                <th scope="col">q27</th>
+                <th scope="col">q28</th>
+                <th scope="col">q29</th>
+                <th scope="col">q30</th>
+                <th scope="col">q31</th>
+                <th scope="col">q32</th>
+                <th scope="col">q33</th>
+                <th scope="col">q34</th>
+                <th scope="col">q35</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in data %}
+            <tr>
+                {% for j in i %}
+
+                <td>{{j}}</td>
+
+
+                {%endfor %}
+            </tr>
+            {%endfor %}
+
+        </tbody>
+    </table>
+
+
+
+</div>
+<div style="display: flex;justify-content: center;padding:0px 50px;">
+    <div style="text-align: center;width: 100%;">
+        <h2 style="margin: 0px !important;">ENQUIRY MESSAGES</h2>
+    </div>
+    
+</div>
+<div>
+    <div style="padding:10px 50px">
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">name</th>
+                    <th scope="col">email</th>
+                    <th scope="col">Message</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                {% for i in messages %}
+                <tr>
+                    {% for j in i %}
+    
+                    <td>{{j}}</td>
+    
+    
+                    {%endfor %}
+                </tr>
+                {%endfor %}
+    
+            </tbody>
+        </table>
+    
+    
+    
+    </div>
+</div>
+{%endblock%}

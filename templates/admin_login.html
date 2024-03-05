@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block title %} Admin {%endblock%}
+{%block content %}
+<style>
+    .iner_new {
+        margin: 4em 10em;
+        padding: 10px 30px;
+    }
+
+    @media screen and (max-width: 480px) {
+
+        .iner_new {
+            margin: 24px;
+            padding: 0;
+        }
+    }
+</style>
+<section id="contact">
+    <div class="iner_new">
+        <section>
+            <form method="post" action="admin_login">
+                <div class="fields">
+                    <div class="field">
+                        <label for="name">username</label>
+                        <input type="text" name="name" id="name" />
+                    </div>
+                    <div class="field">
+                        <label for="password">password</label>
+                        <input type="password" name="password" id="password" />
+                    </div>
+                </div>
+                <ul class="actions">
+                    <li><input type="submit" value="Login" class="primary" /></li>
+                </ul>
+            </form>
+        </section>
+
+    </div>
+</section>
+
+
+{%endblock%}

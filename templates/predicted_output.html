@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block title %} RESULTS {%endblock%}
+{%block content %}
+<div>
+
+
+</div>
+
+<div id="main" class="alt">
+
+    <!-- One -->
+    <section id="one">
+        <div class="inner">
+            <header class="major">
+                <h1>Questions and Predicted Answers</h1>
+            </header>
+
+            <!-- Content -->
+            {% for i in predicted_answer: %}
+            {% set idx = i[1:] %}
+            {% set idx = idx | int %}
+            {% set idx = idx - 1 %}
+            <h2 id="content" style="margin: 0;">{{ questions[idx]['question']}}</h2>
+            <p>The predicted answer is <em style="font-size: 30px;"> " {{predicted_answer[i]}} "</em></p>
+            {% endfor %}
+            <hr class="major" />
+            <div style="display: flex;justify-content: center;">
+                <div style="text-align: center;padding:10px">
+                    <a href="/save_predict"><input type="submit" name="" id="" value="Continue"
+                            class="btn btn-primary"></a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+</div>
+
+
+{%endblock%}

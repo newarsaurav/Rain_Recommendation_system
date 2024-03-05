@@ -1,0 +1,27 @@
+name,q1,q2,q3,q4,q5,q6,q7,q8,q9,q10,q11,q12,q13,q14,q15,q16,q17,q18,q19,q20,q21,q22,q23,q24,q25
+test,yes,no,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,no,no,no,no,no,no,no,no,no,no,no,no,no
+give data ridwqn,yes,yes,yes,no,no,no,no,no,no,no,yes,yes,yes,no,yes,no,yes,no,yes,no,yes,no,yes,no,yes
+test,yes,no,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,no,no,no,no,no,no,no,no,no,no,no,no,no
+predict ridwan,yes,yes,no,yes,no,no,no,no,no,no,yes,yes,yes,yes,no,no,yes,yes,yes,yes,no,yes,no,yes,no
+predict ridwan,yes,yes,no,yes,no,yes,yes,no,yes,no,yes,no,yes,no,yes,no,yes,no,yes,yes,yes,no,no,yes,no
+ridwanulahi actual prediction,yes,no,no,no,yes,no,yes,no,no,yes,no,yes,yes,yes,yes,yes,no,no,yes,yes,yes,no,no,yes,yes
+idris unirug,no,no,no,no,no,no,yes,no,no,yes,no,no,yes,yes,no,no,no,no,yes,no,no,yes,yes,yes,no
+test,no,yes,no,yes,no,no,yes,no,yes,no,yes,no,yes,no,no,no,yes,no,yes,no,yes,no,no,yes,yes
+Moses chika,yes,yes,yes,yes,yes,no,no,yes,no,no,no,no,yes,yes,yes,yes,yes,no,yes,no,yes,yes,yes,yes,no
+contribute test,yes,no,yes,no,yes,no,yes,no,yes,yes,yes,no,yes,no,yes,no,yes,no,yes,no,yes,no,yes,no,yes
+pred test,yes,yes,no,yes,no,yes,yes,no,yes,no,yes,no,no,yes,yes,no,yes,no,yes,no,yes,no,no,yes,no
+auto save pred,yes,yes,no,yes,no,yes,yes,no,yes,no,no,yes,no,yes,no,yes,no,yes,no,yes,no,yes,no,yes,no
+final testing,yes,no,yes,no,yes,yes,no,no,yes,no,yes,no,yes,no,no,yes,no,yes,no,yes,no,yes,no,no,no
+after here is new data,yes,no,yes,no,yes,no,yes,no,yes,no,yes,no,yes,no,yes,no,yes,no,yes,no,yes,no,yes,no,yes
+UNIRUG,no,yes,no,no,no,yes,no,yes,no,yes,no,no,no,no,no,yes,no,no,no,no,no,yes,yes,yes,yes
+mad_zones,no,yes,no,no,no,no,no,yes,yes,no,yes,no,no,no,yes,yes,yes,yes,yes,yes,yes,yes,yes,no,no
+John,no,yes,no,no,yes,yes,no,yes,no,no,no,yes,no,no,yes,no,no,no,no,yes,no,yes,yes,no,yes
+Pradhan Family,no,no,no,yes,yes,no,no,yes,no,no,yes,no,no,no,yes,no,yes,yes,no,yes,no,yes,yes,yes,no
+Jimclarkson,no,yes,yes,yes,yes,no,yes,yes,no,yes,no,no,no,yes,yes,no,no,no,no,no,yes,yes,yes,no,yes
+Lawal Ibraheem ,yes,yes,no,no,no,yes,no,yes,no,no,no,no,no,no,no,yes,no,no,no,no,no,yes,no,yes,yes
+Aminat ,yes,no,no,no,no,no,no,no,no,no,yes,yes,yes,no,no,yes,no,no,yes,yes,yes,yes,no,no,yes
+Tarash,no,no,no,no,no,yes,no,yes,no,no,yes,yes,no,no,no,yes,yes,yes,yes,yes,no,yes,no,no,yes
+Moses Chika ,no,yes,no,yes,yes,yes,no,yes,no,yes,no,no,yes,yes,yes,no,yes,no,no,no,yes,yes,no,yes,no
+Gabriel Abraham,no,yes,no,no,yes,yes,no,yes,no,yes,no,no,yes,no,yes,yes,yes,yes,no,no,no,yes,yes,yes,yes
+Tejiri Ekedama ,yes,no,yes,yes,no,no,yes,no,no,no,yes,no,yes,yes,no,yes,no,no,yes,no,yes,yes,yes,no,no
+Bilzerian,no,yes,no,no,yes,yes,yes,no,yes,no,no,yes,no,no,yes,no,no,yes,no,yes,no,yes,no,no,no
